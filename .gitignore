@@ -1,0 +1,13 @@
+# Pastas de Metadados do Eclipse (qualquer uma na raiz ou em subpastas)
+.metadata/
+**/.metadata/
+.recommenders/
+
+# Arquivos compilados do Java
+*.class
+bin/
+**/bin/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
