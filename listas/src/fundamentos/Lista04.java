@@ -3,7 +3,7 @@ package fundamentos;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class lista04 {
+public class Lista04 {
 
 	static Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 	public static void main(String[] args) {

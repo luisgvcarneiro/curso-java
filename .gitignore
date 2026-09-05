@@ -11,3 +11,9 @@ bin/
 # Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
