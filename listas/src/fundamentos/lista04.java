@@ -1,9 +1,9 @@
-package scripts;
+package fundamentos;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Quarta {
+public class lista04 {
 
 	static Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 	public static void main(String[] args) {
@@ -50,7 +50,7 @@ public class Quarta {
 	}
 	
 	public static void pares(int n) {
-		double a = 0, b = 0, resto = 0;
+		double a = 0, b = 0;
 		
 		for (int i = 0; i < n; i++) {
 			a = sc.nextDouble();

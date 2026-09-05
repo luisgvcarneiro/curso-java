@@ -1,9 +1,9 @@
-package scripts;
+package fundamentos;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Segunda {
+public class lista02 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
