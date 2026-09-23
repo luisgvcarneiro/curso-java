@@ -1,9 +1,10 @@
-    Cálculo de Retângulo em Java
+# Cálculo de Retângulo em Java
 
 Programa simples em Java orientado a objetos para calcular a área, o perímetro e a diagonal de um retângulo.
 
-    Estrutura do Projeto
+## Estrutura do Projeto
 
+```text
 projeto-retangulo/
 ├── src/
 │   ├── application/
@@ -11,3 +12,4 @@ projeto-retangulo/
 │   └── entities/
 │       └── Rectangle.java
 └── README.md
+```
