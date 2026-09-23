@@ -1,4 +1,3 @@
-```markdown
 # Curso Java - Exercícios & Aprendizado
 
 Este repositório reúne os códigos e exercícios desenvolvidos ao longo do aprendizado em Java, cobrindo desde a lógica de programação e fundamentos até os conceitos de Programação Orientada a Objetos (POO).
@@ -7,7 +6,7 @@ Este repositório reúne os códigos e exercícios desenvolvidos ao longo do apr
 
 ## Estrutura do Repositório
 
-O repositório é composto por dois projetos independentes:
+O repositório é composto por três projetos independentes:
 
 ```text
 curso-java/
@@ -21,6 +20,13 @@ curso-java/
 │           ├── Lista03_3.java  # Estrutura Repetitiva (while) - Posto de Combustível
 │           └── Lista04.java    # Estrutura Repetitiva (for)
 │
+├── rectangle-project/          # Projeto prático de POO para cálculo de retângulo
+│   └── src/
+│       ├── application/
+│       │   └── Program.java    # Classe principal com leitura de dados e exibição de resultados
+│       └── entities/
+│           └── Rectangle.java  # Entidade com atributos e métodos (área, perímetro, diagonal)
+│
 └── triangulo-project/          # Projeto prático comparativo de POO vs Estruturado
     └── src/
         ├── application/
@@ -28,7 +34,6 @@ curso-java/
         │   └── TringuloApplication.java # Resolução orientada a objetos (main com instâncias)
         └── entities/
             └── Triangulo.java           # Entidade representando a classe Triângulo com o método area()
-
 ```
 
 ---
@@ -42,7 +47,12 @@ curso-java/
 * **`Lista03_1.java`, `Lista03_2.java` e `Lista03_3.java` (Estrutura Repetitiva - While):** Laços de repetição com teste no início para validação contínua de dados.
 * **`Lista04.java` (Estrutura Repetitiva - For):** Estruturas de repetição com contagem definida, cálculo de médias ponderadas, divisões, fatorial e potências.
 
-**2. `triangulo-project` (Introdução à POO)**
+**2. `rectangle-project` (Cálculo de Retângulo com POO)**
+
+* **`entities/Rectangle.java`:** Encapsulamento de atributos (`width`, `height`) e métodos para calcular área (`area()`), perímetro (`perimeter()`) e diagonal (`diagonal()`).
+* **`application/Program.java`:** Leitura de dados via `Scanner` e exibição dos valores calculados formatados com duas casas decimais (`%.2f%n`).
+
+**3. `triangulo-project` (Introdução à POO)**
 
 * **Programação Estruturada (`SemPOO.java`):** Resolução do problema de calcular a área de dois triângulos declarando todas as variáveis diretamente no método principal.
 * **Programação Orientada a Objetos (`entities/Triangulo.java` & `application/TringuloApplication.java`):** Encapsulamento da regra de negócio dentro da classe `Triangulo` com a fórmula de Heron no método `area()`, reduzindo a duplicação de código e melhorando a reutilização.
@@ -53,7 +63,3 @@ curso-java/
 
 * **Linguagem:** Java
 * **IDE Recomendada:** Eclipse / VS Code / IntelliJ IDEA
-
-```
-
-```
