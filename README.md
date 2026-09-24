@@ -6,10 +6,17 @@ Este repositório reúne os códigos e exercícios desenvolvidos ao longo do apr
 
 ## Estrutura do Repositório
 
-O repositório é composto por três projetos independentes:
+O repositório é composto por cinco projetos independentes:
 
 ```text
 curso-java/
+├── employee-project/           # Projeto prático de POO para salário e aumento salarial
+│   └── src/
+│       ├── application/
+│       │   └── Program.java    # Entrada do funcionário e cálculo do aumento
+│       └── entities/
+│           └── Employee.java   # Entidade com dados do funcionário e regra do aumento
+│
 ├── lista-project/              # Projeto com exercícios de Lógica e Fundamentos
 │   └── src/
 │       └── fundamentos/
@@ -23,39 +30,51 @@ curso-java/
 ├── rectangle-project/          # Projeto prático de POO para cálculo de retângulo
 │   └── src/
 │       ├── application/
-│       │   └── Program.java    # Classe principal com leitura de dados e exibição de resultados
+│       │   └── Program.java    # Leitura de dados e exibição de resultados
 │       └── entities/
-│           └── Rectangle.java  # Entidade com atributos e métodos (área, perímetro, diagonal)
+│           └── Rectangle.java  # Entidade com métodos (área, perímetro, diagonal)
+│
+├── student-project/            # Projeto prático de POO para avaliação de aluno
+│   └── src/
+│       ├── application/
+│       │   └── Program.java    # Leitura e validação das notas
+│       └── entities/
+│           └── Student.java    # Entidade com verificação de aprovação/reprovação
 │
 └── triangulo-project/          # Projeto prático comparativo de POO vs Estruturado
     └── src/
         ├── application/
-        │   ├── SemPOO.java              # Resolução usando apenas lógica estruturada na main
-        │   └── TringuloApplication.java # Resolução orientada a objetos (main com instâncias)
+        │   ├── SemPOO.java              # Resolução usando apenas lógica estruturada
+        │   └── TringuloApplication.java # Resolução orientada a objetos
         └── entities/
-            └── Triangulo.java           # Entidade representando a classe Triângulo com o método area()
+            └── Triangulo.java           # Entidade representando a classe Triângulo
 ```
 
 ---
 
 ## Conteúdo dos Projetos
 
-**1. `lista-project` (Fundamentos de Java)**
+**1. `employee-project` (Gestão de Salário de Funcionário)**
+* **`entities/Employee.java`:** Modelo de domínio contendo `name`, `grossSalary` e `tax`, além de métodos para salário líquido e reajuste percentual.
+* **`application/Program.java`:** Interação com o usuário para registro de funcionário e reajuste salarial.
 
-* **`Lista01.java` (Estrutura Sequencial):** Operações matemáticas básicas, cálculos de área, salários e formatação de saída utilizando `Scanner` e `Locale`.
-* **`Lista02.java` (Estrutura Condicional):** Tomadas de decisão com `if / else` e `switch-case` (par/ímpar, múltiplos, duração de jogos, quadrantes e faixas do Imposto de Renda).
-* **`Lista03_1.java`, `Lista03_2.java` e `Lista03_3.java` (Estrutura Repetitiva - While):** Laços de repetição com teste no início para validação contínua de dados.
-* **`Lista04.java` (Estrutura Repetitiva - For):** Estruturas de repetição com contagem definida, cálculo de médias ponderadas, divisões, fatorial e potências.
+**2. `lista-project` (Fundamentos de Java)**
+* **`Lista01.java` (Estrutura Sequencial):** Operações matemáticas básicas, área, salário e saída formatada.
+* **`Lista02.java` (Estrutura Condicional):** Tomadas de decisão com `if / else` e `switch-case`.
+* **`Lista03_1.java`, `Lista03_2.java` e `Lista03_3.java` (Estrutura Repetitiva - While):** Laços com teste no início.
+* **`Lista04.java` (Estrutura Repetitiva - For):** Laços com contagem definida, médias ponderadas, fatorial e divisões.
 
-**2. `rectangle-project` (Cálculo de Retângulo com POO)**
+**3. `rectangle-project` (Cálculo de Retângulo com POO)**
+* **`entities/Rectangle.java`:** Atributos (`width`, `height`) e métodos para cálculo de área, perímetro e diagonal.
+* **`application/Program.java`:** Leitura de dimensões e exibição dos resultados formatados.
 
-* **`entities/Rectangle.java`:** Encapsulamento de atributos (`width`, `height`) e métodos para calcular área (`area()`), perímetro (`perimeter()`) e diagonal (`diagonal()`).
-* **`application/Program.java`:** Leitura de dados via `Scanner` e exibição dos valores calculados formatados com duas casas decimais (`%.2f%n`).
+**4. `student-project` (Validação de Notas e Aprovação)**
+* **`entities/Student.java`:** Armazena as três notas do aluno, calcula o total e verifica se atingiu a média mínima de 60 pontos.
+* **`application/Program.java`:** Leitura com validação via `do-while` garantindo os limites estabelecidos para cada nota.
 
-**3. `triangulo-project` (Introdução à POO)**
-
-* **Programação Estruturada (`SemPOO.java`):** Resolução do problema de calcular a área de dois triângulos declarando todas as variáveis diretamente no método principal.
-* **Programação Orientada a Objetos (`entities/Triangulo.java` & `application/TringuloApplication.java`):** Encapsulamento da regra de negócio dentro da classe `Triangulo` com a fórmula de Heron no método `area()`, reduzindo a duplicação de código e melhorando a reutilização.
+**5. `triangulo-project` (Introdução à POO)**
+* **Programação Estruturada (`SemPOO.java`):** Resolução usando apenas o método principal.
+* **Programação Orientada a Objetos (`entities/Triangulo.java` & `application/TringuloApplication.java`):** Encapsulamento da regra com a fórmula de Heron na entidade.
 
 ---
 
